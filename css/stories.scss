@@ -1,0 +1,137 @@
+@import "../css/utils.scss";
+
+#hazy-full-moon {
+  color: white;
+  height: auto;
+  width: $full;
+
+  @media (max-width: $mobile) {
+    background-color: black;
+  }
+
+  @media (min-width: 768px) and (max-width: $tablet) {
+    width: $full;
+    background: url("../assets/stories/tablet/moon-of-appalacia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    .text-box {
+      display: block;
+      margin-left: 39px;
+      .child-box {
+        height: 406px;
+        padding: 122px 0px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: $full;
+    background: url("../assets/stories/desktop/moon-of-appalacia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    .text-box {
+      display: block;
+      margin-left: 112px;
+      .child-box {
+        height: 406px;
+        padding: 122px 0px;
+      }
+    }
+  }
+}
+
+#picture-wrap {
+  color: white;
+
+  @include mobile {
+    width: $full;
+    display: flex;
+    flex-direction: column;
+    .child-box {
+      margin-top: 215px;
+      margin-bottom: 40px;
+      width: 310px;
+    }
+  }
+  @include tablet {
+    width: $full;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    .child-box {
+      margin-top: 361px;
+      margin-bottom: 40px;
+      width: 303px;
+    }
+
+    .rgb-border {
+      display:  none;
+      position: absolute;
+      width: 100%;
+      height: 6px;
+      margin-top: 494px;
+        background-image: linear-gradient(to left,
+            #ffc593 0%,
+            #bc7198 51.95%,
+            #5a77ff 100%)
+      }
+  }
+  @include desktop {
+    width: $full;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .child-box {
+      margin-top: 340px;
+      margin-bottom: 40px;
+      width: 77.7778%;
+    }
+    
+.rgb-border {
+  display:  none;
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  margin-top: 494px;
+    background-image: linear-gradient(to left,
+        #ffc593 0%,
+        #bc7198 51.95%,
+        #5a77ff 100%)
+  }
+  }
+}
+
+
+.bg-box {
+  &:hover {
+    transform: translateY(-50px);
+    transition: 0.5s;
+  }
+  h3 {
+    margin: 4px 0px;
+  }
+  h4 {
+    margin: 0px;
+  }
+  h6 {
+    margin: 0px;
+  }
+  @include flex-center-only;
+  @include mobile {
+    width: $full;
+    height: 375px;
+  }
+  @include tablet {
+    width: 50%;
+    height: 500px;
+  }
+
+  @include desktop {
+    width: 25%;
+    padding-top: 10%;
+  }
+}

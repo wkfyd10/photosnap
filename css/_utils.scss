@@ -1,0 +1,694 @@
+$mobile: 767px;
+$tablet: 1023px;
+$desktop: 1024px;
+$full: 100%;
+$center: center;
+$sans: "DM Sans";
+
+@mixin body {}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: 3.33px;
+      font-family: "DM Sans";
+    }
+
+    .tablet {
+      display: none;
+    }
+
+    .desktop {
+      display: none;
+    }
+
+    @content;
+  }
+
+  html {
+    width: 100%;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 768px) and (max-width: $tablet) {
+    .mobile {
+      display: none;
+    }
+
+    .desktop {
+      display: none;
+    }
+
+    @content;
+  }
+
+  html {
+    width: 100%;
+  }
+
+  @include body;
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+    .mobile {
+      display: none;
+    }
+
+    .tablet {
+      display: none;
+    }
+
+    @content;
+  }
+
+  html {
+    width: 100%;
+  }
+
+  @include body;
+}
+
+@mixin flex-center-only {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-row-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+@mixin black-button {
+  width: 158px;
+  height: 40px;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px;
+  transition: 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #dfdfdf;
+    color: black;
+  }
+}
+
+@mixin mg-0 {
+  margin: 0px;
+}
+
+@mixin get-an-invite {
+  width: 172px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin rectangle {
+  background: linear-gradient(27deg, #ffc593 0%, #bc7198 51.95%, #5a77ff 100%);
+  background-blend-mode: normal;
+}
+
+@mixin bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @content;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 4.167px;
+  font-family: $sans;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: $sans;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  font-family: $sans;
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: $sans;
+}
+
+h5 {
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.5;
+  font-family: $sans;
+}
+
+h6 {
+  margin: 0px;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: $sans;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+#arrow {
+  width: 168px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+  }
+}
+
+#arrow-stories {
+  width: 204px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+  }
+}
+
+#arrow-view {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px;
+}
+
+.oc-half {
+  opacity: 0.5;
+}
+
+.mg-b-24 {
+  margin-bottom: 24px;
+}
+
+#border {
+  opacity: 0.25;
+  height: 1px;
+  width: 100%;
+  background: #ffffff;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+@mixin pricing-button {
+  width: 64px;
+  height: 32px;
+  border-radius: 16px;
+  background: #dfdfdf;
+  border: none;
+}
+
+#black-dot {
+  background-color: black;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+}
+
+#pick-plan-btn {
+  border: none;
+
+  @include mobile {
+    width: 245px;
+  }
+}
+
+/*beta*/
+
+
+/*STORIES*/
+#mountain {
+  @include mobile {
+    background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)),
+      url("../assets/stories/mobile/mountains.jpg");
+    @include bg;
+  }
+  @include tablet {
+    background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)),
+    url("../assets/stories/desktop/mountains.jpg");
+    @include bg;
+  }
+  @include desktop {
+    background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)),
+    url("../assets/stories/desktop/mountains.jpg");
+    @include bg;
+  }
+}
+
+#cityscapes {
+  @include mobile {
+    background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)),
+    url("../assets/stories/mobile/mountains.jpg");
+    @include bg;
+  }
+  @include tablet {
+    background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)),
+    url("../assets/stories/desktop/cityscapes.jpg");
+    @include bg;
+  }
+  @include desktop {
+    background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)),
+    url("../assets/stories/desktop/cityscapes.jpg");
+    @include bg;
+  }
+}
+#voyage {
+  @include mobile {
+    background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)),
+      url("../assets/stories/mobile/18-days-voyage.jpg");
+    @include bg;
+  }
+  @include tablet {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/18-days-voyage.jpg");
+    @include bg;
+  }
+  @include desktop {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/18-days-voyage.jpg");
+    @include bg;
+  }
+}
+
+#architecturals {
+  @include mobile {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/mobile/architecturals.jpg");
+    @include bg;
+  }
+  @include tablet {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/architecturals.jpg");
+    @include bg;
+  }
+  @include desktop {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/architecturals.jpg");
+    @include bg;
+  }
+}
+
+#world-tour {
+  @include mobile {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/mobile/world-tour.jpg");
+    @include bg;
+  }
+  @include tablet {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/world-tour.jpg");
+    @include bg;
+  }
+  @include desktop {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/world-tour.jpg");
+    @include bg;
+  }
+}
+
+#unforeseen {
+  @include mobile {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/mobile/unforeseen-corners.jpg");
+    @include bg;
+  }
+  @include tablet {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/unforeseen-corners.jpg");
+    @include bg;
+  }
+  @include desktop {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/unforeseen-corners.jpg");
+    @include bg;
+  }
+}
+
+#africa {
+  @include mobile {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/mobile/king-on-africa.jpg");
+    @include bg;
+  }
+  @include tablet {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/king-on-africa.jpg");
+    @include bg;
+  }
+  @include desktop {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/king-on-africa.jpg");
+    @include bg;
+  }
+}
+
+#trip {
+  @include mobile {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/mobile/trip-to-nowhere.jpg");
+    @include bg;
+  }
+  @include tablet {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/trip-to-nowhere.jpg");
+    @include bg;
+  }
+  @include desktop {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/trip-to-nowhere.jpg");
+    @include bg;
+  }
+}
+
+#sea {
+  @include mobile {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/mobile/rage-of-the-sea.jpg");
+    @include bg;
+  }
+  @include tablet {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/rage-of-the-sea.jpg");
+    @include bg;
+  }
+  @include desktop {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/rage-of-the-sea.jpg");
+    @include bg;
+  }
+}
+
+#running {
+  @include mobile {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/mobile/running-free.jpg");
+    @include bg;
+  }
+  @include tablet {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/running-free.jpg");
+    @include bg;
+  }
+  @include desktop {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/running-free.jpg");
+    @include bg;
+  }
+}
+
+#waves {
+  @include mobile {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/mobile/behind-the-waves.jpg");
+    @include bg;
+  }
+  @include tablet {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/behind-the-waves.jpg");
+    @include bg;
+  }
+  @include desktop {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/behind-the-waves.jpg");
+    @include bg;
+  }
+}
+
+#waters {
+  @include mobile {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/mobile/calm-waters.jpg");
+    @include bg;
+  }
+  @include tablet {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/calm-waters.jpg");
+    @include bg;
+  }
+  @include desktop {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/calm-waters.jpg");
+    @include bg;
+  }
+}
+
+#milky-way {
+  @include mobile {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/mobile/milky-way.jpg");
+    @include bg;
+  }
+  @include tablet {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/milky-way.jpg");
+    @include bg;
+  }
+  @include desktop {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/milky-way.jpg");
+    @include bg;
+  }
+}
+
+#forest {
+  @include mobile {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/mobile/dark-forest.jpg");
+    @include bg;
+  }
+  @include tablet {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/dark-forest.jpg");
+    @include bg;
+  }
+  @include desktop {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/dark-forest.jpg");
+    @include bg;
+  }
+}
+
+#somwarpet {
+  @include mobile {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/mobile/somwarpet.jpg");
+    @include bg;
+  }
+  @include tablet {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/somwarpet.jpg");
+    @include bg;
+  }
+  @include desktop {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/somwarpet.jpg");
+    @include bg;
+  }
+}
+
+#dreams {
+  @include mobile {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/mobile/land-of-dreams.jpg");
+    @include bg;
+  }
+  @include tablet {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/land-of-dreams.jpg");
+    @include bg;
+  }
+  @include desktop {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.01),
+        rgba(0, 0, 0, 0.662)
+      ),
+      url("../assets/stories/desktop/land-of-dreams.jpg");
+    @include bg;
+  }
+}

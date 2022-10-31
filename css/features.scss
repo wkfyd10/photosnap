@@ -1,0 +1,207 @@
+@import "../css/utils.scss";
+
+#features-explain {
+    background-color: black;
+    color: white;
+    flex-direction: row-reverse;
+  }
+
+  .wrap {
+    @include mobile {
+      width: $full;
+  
+      img {
+        width: $full;
+      }
+      #rectangle {
+        @include rectangle;
+        width: 128px;
+        height: 6px;
+        margin-top: -4px;
+        margin-left: 33px;
+      }
+      .text-box {
+        width: 84.8%;
+        padding: 72px 0px;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+  
+        .child-box {
+          h5 {
+            line-height: 25px;
+            font-family: "DM Sans";
+            height: auto;
+          }
+        }
+      }
+    }
+  
+    @include tablet {
+      display: flex;
+      position: relative;
+      align-items: center;
+      #rectangle {
+        @include rectangle;
+        width: 6px;
+        height: 144px;
+        margin: 0px;
+        position: absolute;
+        display: flex;
+        left: 0px;
+        top: 50%;
+        transform: translate(0%, -50%);
+      }
+      .text-box {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        .child-box {
+          width: 387px;
+          height: 144px;
+          h1 {
+            margin-top: 0px;
+          }
+        }
+      }
+    }
+  
+    @include desktop {
+      display: flex;
+      position: relative;
+      img {
+        width: 57.638888888888886%;
+      }
+      #rectangle {
+        @include rectangle;
+        width: 6px;
+        height: 144px;
+        margin: 0px;
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translate(0%, -50%);
+      }
+      .text-box {
+        display: flex;
+        align-items: center;
+        width: 42.36%;
+        justify-content: center;
+        .child-box {
+          width: 387px;
+          height: 144px;
+          h1 {
+            margin-top: 0px;
+          }
+        }
+      }
+    }
+  }
+  
+  #picture-wrap {
+    color: white;
+    @include mobile {
+      width: $full;
+      display: flex;
+      flex-direction: column;
+      .child-box {
+        margin-top: 215px;
+        margin-bottom: 40px;
+        width: 310px;
+    }
+  }
+    @include tablet {
+      width: $full;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .child-box {
+        margin-top: 361px;
+        margin-bottom: 40px;
+        width: 303px;
+      }
+    }
+    @include desktop {
+      width: $full;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .child-box {
+        margin-top: 340px;
+        margin-bottom: 40px;
+        width: 77.7778%;
+        height: auto;
+      }
+    }
+  }
+  
+  
+  #features-wrap{
+  @media (max-width: 767px) {
+      height: 1675px;
+      display: flex;
+      justify-content: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center;
+   .child-box {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 310px;
+      text-align: center;
+    }
+   .child-box h3 {
+      margin-top: 48px;
+    }
+    .child-box h5 {
+      margin: 0px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    width: 691px;
+    height: 861px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    margin: 112px auto;
+ .child-box {
+     margin: 0 auto;
+     width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    #features-wrap .child-box h3 {
+      margin-top: 66px;
+    }
+    #features-wrap .child-box h5 {
+      margin: 0px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 3rem;
+      margin: 120px auto;
+      height: 576px;
+      max-width: 1110px;
+      .child-box {
+      text-align: center;
+      h3 {
+        margin-top: 66px;
+      }
+      h5 {
+        margin: 0px;
+      }
+    }
+  }
+}
+

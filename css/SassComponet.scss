@@ -1,0 +1,505 @@
+@import "../css/utils.scss";
+
+#hamburger {
+  display: none;
+}
+
+#logo {
+  cursor: pointer;
+}
+
+body {
+  margin: 0px;
+}
+
+#top-nav {
+  width: 100%;
+
+  a {
+    color: black;
+    &:hover {
+      color: #dfdfdf;
+      transition: 0.3s;
+    }
+  }
+
+  @include flex-row;
+
+  @include mobile {
+    #hamburger {
+      display: inline-block;
+      margin-right: 6.4%;
+    }
+
+    #logo {
+      margin-left: 6.4%;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    button {
+      display: none;
+    }
+  }
+
+  @include tablet {
+    #logo {
+      margin-left: 34px;
+    }
+
+    .menu {
+      @include flex-row;
+      width: 269px;
+      cursor: pointer;
+    }
+
+    button {
+      margin-right: 40px;
+      @include black-button;
+      cursor: pointer;
+    }
+
+    h4 {
+      @include mg-0;
+    }
+  }
+
+  @include desktop {
+    #logo {
+      margin-left: 11.458333333333332%;
+    }
+
+    .menu {
+      @include flex-row;
+      width: 269px;
+      cursor: pointer;
+    }
+
+    button {
+      margin-right: 11.458333333333332%;
+      @include black-button;
+    }
+
+    h4 {
+      @include mg-0;
+    }
+  }
+
+  img {
+    align-self: $center;
+  }
+
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+#bottom-nav {
+  display: flex;
+  background-color: black;
+  width: $full;
+  color: white;
+
+  a {
+    color: white;
+  }
+
+  @include mobile {
+    .nav-box {
+      margin: 56px auto;
+      width: 82.7%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      .sns-box {
+        width: 154px;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 32px;
+      }
+
+      .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 49px 0px 100px 0px;
+
+        h4 {
+          margin: 0px;
+          margin-bottom: 19px;
+        }
+      }
+
+      .get-an-invite {
+        @include get-an-invite;
+      }
+
+      h5 {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  @include tablet {
+    .nav-box {
+      display: grid;
+      grid-template-rows: 0% auto auto 0%;
+
+      #logo {
+        order: 1;
+      }
+
+      margin: 64px auto;
+      width: 89.71354166666666%;
+      display: grid;
+
+      .get-an-invite {
+        @include get-an-invite;
+        justify-self: end;
+        order: 2;
+
+        h4 {
+          margin: 0px;
+        }
+      }
+
+      .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 315px;
+        justify-content: space-between;
+        margin: 32px 0px 72px 0px;
+        order: 3;
+        cursor: pointer;
+
+        h4 {
+          margin: 0px;
+          margin-bottom: 19px;
+        }
+      }
+
+      .sns-box {
+        width: 154px;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 0px;
+        order: 5;
+        justify-self: start;
+        cursor: pointer;
+      }
+
+      h5 {
+        margin-bottom: 0px;
+        justify-self: end;
+        order: 5;
+        margin-top: 0px;
+      }
+    }
+  }
+
+  @include desktop {
+    .nav-box {
+      display: grid;
+      grid-template-columns: 0% auto 0%;
+      margin: 64px auto;
+      width: 76.67%;
+
+      #logo {
+        order: 1;
+      }
+
+      .get-an-invite {
+        @include get-an-invite;
+        justify-self: end;
+        order: 1;
+        height: 16px;
+
+        h4 {
+          margin: 0px;
+        }
+      }
+
+      .menu {
+        display: flex;
+        flex-direction: column;
+        width: 315px;
+        justify-content: space-between;
+        margin: 0px 279px 0px;
+        order: 1;
+        cursor: pointer;
+
+        h4 {
+          margin: 0px;
+          margin-bottom: 19px;
+        }
+      }
+
+      .sns-box {
+        width: 154px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0px;
+        order: 5;
+        justify-self: start;
+        cursor: pointer;
+      }
+
+      h5 {
+        margin-bottom: 0px;
+        justify-self: end;
+        order: 5;
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+.wrap {
+  @include mobile {
+    width: $full;
+
+    img {
+      width: $full;
+    }
+
+    #rectangle {
+      @include rectangle;
+      width: 128px;
+      height: 6px;
+      margin-top: -4px;
+      margin-left: 33px;
+    }
+
+    .text-box {
+      width: 84.8%;
+      padding: 72px 0px;
+      display: flex;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+
+      .child-box {
+        h5 {
+          line-height: 25px;
+          font-family: "DM Sans";
+          height: auto;
+        }
+      }
+    }
+  }
+
+  @include tablet {
+    display: flex;
+    position: relative;
+
+    #rectangle {
+      @include rectangle;
+      width: 6px;
+      height: 320px;
+      margin: 0px;
+      position: absolute;
+      display: flex;
+      left: 0px;
+      top: 50%;
+      transform: translate(0%, -50%);
+    }
+    .text-box {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+      .child-box {
+        width: 387px;
+        height: 304px;
+        h1 {
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+
+  @include desktop {
+    display: flex;
+    position: relative;
+    img {
+      width: 57.638888888888886%;
+    }
+
+    #rectangle {
+      @include rectangle;
+      width: 6px;
+      height: 304px;
+      margin: 0px;
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      transform: translate(0%, -50%);
+    }
+    .text-box {
+      display: flex;
+      align-items: center;
+      width: 42.36%;
+      justify-content: center;
+      .child-box {
+        width: 387px;
+        h1 {
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+}
+
+/*FEATURES*/
+
+#drop-down {
+  position: absolute;
+  top: 76px;
+  width: 100%;
+  height: 253px;
+  flex-direction: column;
+  text-align: center;
+  border-top: 1px solid black;
+  display: none;
+  background: #ffffff;
+  background-blend-mode: normal;
+  opacity: 1;
+
+  h5 {
+    opacity: 1;
+    margin: 0px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .menu {
+    width: 82.7%;
+    height: 152px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-bottom: solid 1px black;
+  }
+
+  .black-btn {
+    width: 82.7%;
+    background-color: black;
+    border: none;
+    margin: 20px auto 32px auto;
+
+    h5 {
+      color: white;
+      margin: 14px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:visited {
+    color: black;
+  }
+}
+
+
+
+#beta {
+  position: relative;
+  color: white;
+
+  .get-an-invite {
+    width: 168px;
+    @include get-an-invite;
+  }
+
+  @media (max-width: 767px) {
+    .rectangle {
+      position: absolute;
+      width: 310px;
+      height: 6px;
+      top: 0;
+      left: 33px;
+      right: 33px;
+      margin: auto;
+      @include rectangle;
+      background-size: 128px;
+      background-repeat: no-repeat;
+    }
+    background: url("../assets/shared/mobile/bg-beta.jpg");
+    padding: 64px 0px;
+    @include bg;
+
+    .child-box {
+      width: 310px;
+      margin: 0 auto;
+
+      h1 {
+        font-size: 32px;
+        letter-spacing: 3.33px;
+        margin: 0px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .rectangle {
+      position: absolute;
+      width: 6px;
+      height: 100%;
+      top: 0;
+      @include rectangle;
+      background-repeat: no-repeat;
+    }
+
+    background: url("../assets/shared/tablet/bg-beta.jpg");
+    padding: 68px 0px;
+    @include bg;
+
+    .child-box {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      h1 {
+        margin: 0px;
+        width: 410px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop) {
+    .rectangle {
+      position: absolute;
+      width: 6px;
+      height: 100%;
+      top: 0;
+      @include rectangle;
+      background-repeat: no-repeat;
+    }
+
+    background: url("../assets/shared/desktop/bg-beta.jpg");
+    padding: 68px 0px;
+    @include bg;
+
+    .child-box {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      h1 {
+        margin: 0px;
+        width: 400px;
+      }
+    }
+  }
+}

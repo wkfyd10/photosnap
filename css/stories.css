@@ -1,0 +1,1305 @@
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 4.167px;
+  font-family: "DM Sans";
+}
+
+h2 {
+  font-size: 24px;
+  font-family: "DM Sans";
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  font-family: "DM Sans";
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: "DM Sans";
+}
+
+h5 {
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.5;
+  font-family: "DM Sans";
+}
+
+h6 {
+  margin: 0px;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "DM Sans";
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+#arrow {
+  width: 168px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px;
+  cursor: pointer;
+}
+#arrow:hover {
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+#arrow-stories {
+  width: 204px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px;
+  cursor: pointer;
+}
+#arrow-stories:hover {
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+#arrow-view {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px;
+}
+
+.oc-half {
+  opacity: 0.5;
+}
+
+.mg-b-24 {
+  margin-bottom: 24px;
+}
+
+#border {
+  opacity: 0.25;
+  height: 1px;
+  width: 100%;
+  background: #ffffff;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+#black-dot {
+  background-color: black;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+}
+
+#pick-plan-btn {
+  border: none;
+}
+@media (max-width: 767px) {
+  #pick-plan-btn {
+    width: 245px;
+  }
+  #pick-plan-btn h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 3.33px;
+    font-family: "DM Sans";
+  }
+  #pick-plan-btn .tablet {
+    display: none;
+  }
+  #pick-plan-btn .desktop {
+    display: none;
+  }
+}
+#pick-plan-btn html {
+  width: 100%;
+}
+
+/*beta*/
+/*STORIES*/
+@media (max-width: 767px) {
+  #mountain {
+    background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/mobile/mountains.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #mountain h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 3.33px;
+    font-family: "DM Sans";
+  }
+  #mountain .tablet {
+    display: none;
+  }
+  #mountain .desktop {
+    display: none;
+  }
+}
+#mountain html {
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #mountain {
+    background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/mountains.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #mountain .mobile {
+    display: none;
+  }
+  #mountain .desktop {
+    display: none;
+  }
+}
+#mountain html {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  #mountain {
+    background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/mountains.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #mountain .mobile {
+    display: none;
+  }
+  #mountain .tablet {
+    display: none;
+  }
+}
+#mountain html {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #cityscapes {
+    background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/mobile/mountains.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #cityscapes h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 3.33px;
+    font-family: "DM Sans";
+  }
+  #cityscapes .tablet {
+    display: none;
+  }
+  #cityscapes .desktop {
+    display: none;
+  }
+}
+#cityscapes html {
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #cityscapes {
+    background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/cityscapes.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #cityscapes .mobile {
+    display: none;
+  }
+  #cityscapes .desktop {
+    display: none;
+  }
+}
+#cityscapes html {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  #cityscapes {
+    background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/cityscapes.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #cityscapes .mobile {
+    display: none;
+  }
+  #cityscapes .tablet {
+    display: none;
+  }
+}
+#cityscapes html {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #voyage {
+    background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/mobile/18-days-voyage.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #voyage h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 3.33px;
+    font-family: "DM Sans";
+  }
+  #voyage .tablet {
+    display: none;
+  }
+  #voyage .desktop {
+    display: none;
+  }
+}
+#voyage html {
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #voyage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/18-days-voyage.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #voyage .mobile {
+    display: none;
+  }
+  #voyage .desktop {
+    display: none;
+  }
+}
+#voyage html {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  #voyage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/18-days-voyage.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #voyage .mobile {
+    display: none;
+  }
+  #voyage .tablet {
+    display: none;
+  }
+}
+#voyage html {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #architecturals {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/mobile/architecturals.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #architecturals h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 3.33px;
+    font-family: "DM Sans";
+  }
+  #architecturals .tablet {
+    display: none;
+  }
+  #architecturals .desktop {
+    display: none;
+  }
+}
+#architecturals html {
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #architecturals {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/architecturals.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #architecturals .mobile {
+    display: none;
+  }
+  #architecturals .desktop {
+    display: none;
+  }
+}
+#architecturals html {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  #architecturals {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/architecturals.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #architecturals .mobile {
+    display: none;
+  }
+  #architecturals .tablet {
+    display: none;
+  }
+}
+#architecturals html {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #world-tour {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/mobile/world-tour.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #world-tour h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 3.33px;
+    font-family: "DM Sans";
+  }
+  #world-tour .tablet {
+    display: none;
+  }
+  #world-tour .desktop {
+    display: none;
+  }
+}
+#world-tour html {
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #world-tour {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/world-tour.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #world-tour .mobile {
+    display: none;
+  }
+  #world-tour .desktop {
+    display: none;
+  }
+}
+#world-tour html {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  #world-tour {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/world-tour.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #world-tour .mobile {
+    display: none;
+  }
+  #world-tour .tablet {
+    display: none;
+  }
+}
+#world-tour html {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #unforeseen {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/mobile/unforeseen-corners.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #unforeseen h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 3.33px;
+    font-family: "DM Sans";
+  }
+  #unforeseen .tablet {
+    display: none;
+  }
+  #unforeseen .desktop {
+    display: none;
+  }
+}
+#unforeseen html {
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #unforeseen {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/unforeseen-corners.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #unforeseen .mobile {
+    display: none;
+  }
+  #unforeseen .desktop {
+    display: none;
+  }
+}
+#unforeseen html {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  #unforeseen {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/unforeseen-corners.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #unforeseen .mobile {
+    display: none;
+  }
+  #unforeseen .tablet {
+    display: none;
+  }
+}
+#unforeseen html {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #africa {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/mobile/king-on-africa.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #africa h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 3.33px;
+    font-family: "DM Sans";
+  }
+  #africa .tablet {
+    display: none;
+  }
+  #africa .desktop {
+    display: none;
+  }
+}
+#africa html {
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #africa {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/king-on-africa.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #africa .mobile {
+    display: none;
+  }
+  #africa .desktop {
+    display: none;
+  }
+}
+#africa html {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  #africa {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/king-on-africa.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #africa .mobile {
+    display: none;
+  }
+  #africa .tablet {
+    display: none;
+  }
+}
+#africa html {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #trip {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/mobile/trip-to-nowhere.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #trip h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 3.33px;
+    font-family: "DM Sans";
+  }
+  #trip .tablet {
+    display: none;
+  }
+  #trip .desktop {
+    display: none;
+  }
+}
+#trip html {
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #trip {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/trip-to-nowhere.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #trip .mobile {
+    display: none;
+  }
+  #trip .desktop {
+    display: none;
+  }
+}
+#trip html {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  #trip {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/trip-to-nowhere.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #trip .mobile {
+    display: none;
+  }
+  #trip .tablet {
+    display: none;
+  }
+}
+#trip html {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #sea {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/mobile/rage-of-the-sea.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #sea h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 3.33px;
+    font-family: "DM Sans";
+  }
+  #sea .tablet {
+    display: none;
+  }
+  #sea .desktop {
+    display: none;
+  }
+}
+#sea html {
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #sea {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/rage-of-the-sea.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #sea .mobile {
+    display: none;
+  }
+  #sea .desktop {
+    display: none;
+  }
+}
+#sea html {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  #sea {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/rage-of-the-sea.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #sea .mobile {
+    display: none;
+  }
+  #sea .tablet {
+    display: none;
+  }
+}
+#sea html {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #running {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/mobile/running-free.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #running h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 3.33px;
+    font-family: "DM Sans";
+  }
+  #running .tablet {
+    display: none;
+  }
+  #running .desktop {
+    display: none;
+  }
+}
+#running html {
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #running {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/running-free.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #running .mobile {
+    display: none;
+  }
+  #running .desktop {
+    display: none;
+  }
+}
+#running html {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  #running {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/running-free.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #running .mobile {
+    display: none;
+  }
+  #running .tablet {
+    display: none;
+  }
+}
+#running html {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #waves {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/mobile/behind-the-waves.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #waves h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 3.33px;
+    font-family: "DM Sans";
+  }
+  #waves .tablet {
+    display: none;
+  }
+  #waves .desktop {
+    display: none;
+  }
+}
+#waves html {
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #waves {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/behind-the-waves.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #waves .mobile {
+    display: none;
+  }
+  #waves .desktop {
+    display: none;
+  }
+}
+#waves html {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  #waves {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/behind-the-waves.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #waves .mobile {
+    display: none;
+  }
+  #waves .tablet {
+    display: none;
+  }
+}
+#waves html {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #waters {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/mobile/calm-waters.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #waters h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 3.33px;
+    font-family: "DM Sans";
+  }
+  #waters .tablet {
+    display: none;
+  }
+  #waters .desktop {
+    display: none;
+  }
+}
+#waters html {
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #waters {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/calm-waters.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #waters .mobile {
+    display: none;
+  }
+  #waters .desktop {
+    display: none;
+  }
+}
+#waters html {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  #waters {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/calm-waters.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #waters .mobile {
+    display: none;
+  }
+  #waters .tablet {
+    display: none;
+  }
+}
+#waters html {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #milky-way {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/mobile/milky-way.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #milky-way h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 3.33px;
+    font-family: "DM Sans";
+  }
+  #milky-way .tablet {
+    display: none;
+  }
+  #milky-way .desktop {
+    display: none;
+  }
+}
+#milky-way html {
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #milky-way {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/milky-way.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #milky-way .mobile {
+    display: none;
+  }
+  #milky-way .desktop {
+    display: none;
+  }
+}
+#milky-way html {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  #milky-way {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/milky-way.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #milky-way .mobile {
+    display: none;
+  }
+  #milky-way .tablet {
+    display: none;
+  }
+}
+#milky-way html {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #forest {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/mobile/dark-forest.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #forest h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 3.33px;
+    font-family: "DM Sans";
+  }
+  #forest .tablet {
+    display: none;
+  }
+  #forest .desktop {
+    display: none;
+  }
+}
+#forest html {
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #forest {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/dark-forest.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #forest .mobile {
+    display: none;
+  }
+  #forest .desktop {
+    display: none;
+  }
+}
+#forest html {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  #forest {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/dark-forest.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #forest .mobile {
+    display: none;
+  }
+  #forest .tablet {
+    display: none;
+  }
+}
+#forest html {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #somwarpet {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/mobile/somwarpet.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #somwarpet h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 3.33px;
+    font-family: "DM Sans";
+  }
+  #somwarpet .tablet {
+    display: none;
+  }
+  #somwarpet .desktop {
+    display: none;
+  }
+}
+#somwarpet html {
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #somwarpet {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/somwarpet.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #somwarpet .mobile {
+    display: none;
+  }
+  #somwarpet .desktop {
+    display: none;
+  }
+}
+#somwarpet html {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  #somwarpet {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/somwarpet.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #somwarpet .mobile {
+    display: none;
+  }
+  #somwarpet .tablet {
+    display: none;
+  }
+}
+#somwarpet html {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #dreams {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/mobile/land-of-dreams.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #dreams h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 3.33px;
+    font-family: "DM Sans";
+  }
+  #dreams .tablet {
+    display: none;
+  }
+  #dreams .desktop {
+    display: none;
+  }
+}
+#dreams html {
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #dreams {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/land-of-dreams.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #dreams .mobile {
+    display: none;
+  }
+  #dreams .desktop {
+    display: none;
+  }
+}
+#dreams html {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  #dreams {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662)), url("../assets/stories/desktop/land-of-dreams.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #dreams .mobile {
+    display: none;
+  }
+  #dreams .tablet {
+    display: none;
+  }
+}
+#dreams html {
+  width: 100%;
+}
+
+#hazy-full-moon {
+  color: white;
+  height: auto;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  #hazy-full-moon {
+    background-color: black;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #hazy-full-moon {
+    width: 100%;
+    background: url("../assets/stories/tablet/moon-of-appalacia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+  }
+  #hazy-full-moon .text-box {
+    display: block;
+    margin-left: 39px;
+  }
+  #hazy-full-moon .text-box .child-box {
+    height: 406px;
+    padding: 122px 0px;
+  }
+}
+@media (min-width: 1024px) {
+  #hazy-full-moon {
+    width: 100%;
+    background: url("../assets/stories/desktop/moon-of-appalacia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+  }
+  #hazy-full-moon .text-box {
+    display: block;
+    margin-left: 112px;
+  }
+  #hazy-full-moon .text-box .child-box {
+    height: 406px;
+    padding: 122px 0px;
+  }
+}
+
+#picture-wrap {
+  color: white;
+}
+@media (max-width: 767px) {
+  #picture-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #picture-wrap h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 3.33px;
+    font-family: "DM Sans";
+  }
+  #picture-wrap .tablet {
+    display: none;
+  }
+  #picture-wrap .desktop {
+    display: none;
+  }
+  #picture-wrap .child-box {
+    margin-top: 215px;
+    margin-bottom: 40px;
+    width: 310px;
+  }
+}
+#picture-wrap html {
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #picture-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #picture-wrap .mobile {
+    display: none;
+  }
+  #picture-wrap .desktop {
+    display: none;
+  }
+  #picture-wrap .child-box {
+    margin-top: 361px;
+    margin-bottom: 40px;
+    width: 303px;
+  }
+  #picture-wrap .rgb-border {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    margin-top: 494px;
+    background-image: linear-gradient(to left, #ffc593 0%, #bc7198 51.95%, #5a77ff 100%);
+  }
+}
+#picture-wrap html {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  #picture-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #picture-wrap .mobile {
+    display: none;
+  }
+  #picture-wrap .tablet {
+    display: none;
+  }
+  #picture-wrap .child-box {
+    margin-top: 340px;
+    margin-bottom: 40px;
+    width: 77.7778%;
+  }
+  #picture-wrap .rgb-border {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    margin-top: 494px;
+    background-image: linear-gradient(to left, #ffc593 0%, #bc7198 51.95%, #5a77ff 100%);
+  }
+}
+#picture-wrap html {
+  width: 100%;
+}
+
+.bg-box {
+  display: flex;
+  justify-content: center;
+}
+.bg-box:hover {
+  transform: translateY(-50px);
+  transition: 0.5s;
+}
+.bg-box h3 {
+  margin: 4px 0px;
+}
+.bg-box h4 {
+  margin: 0px;
+}
+.bg-box h6 {
+  margin: 0px;
+}
+@media (max-width: 767px) {
+  .bg-box {
+    width: 100%;
+    height: 375px;
+  }
+  .bg-box h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 3.33px;
+    font-family: "DM Sans";
+  }
+  .bg-box .tablet {
+    display: none;
+  }
+  .bg-box .desktop {
+    display: none;
+  }
+}
+.bg-box html {
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .bg-box {
+    width: 50%;
+    height: 500px;
+  }
+  .bg-box .mobile {
+    display: none;
+  }
+  .bg-box .desktop {
+    display: none;
+  }
+}
+.bg-box html {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .bg-box {
+    width: 25%;
+    padding-top: 10%;
+  }
+  .bg-box .mobile {
+    display: none;
+  }
+  .bg-box .tablet {
+    display: none;
+  }
+}
+.bg-box html {
+  width: 100%;
+}/*# sourceMappingURL=stories.css.map */
