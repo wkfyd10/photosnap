@@ -12,13 +12,13 @@ $(document).ready(() => {
   $menuButton.on("click", () => {
     if (
       $menuButton.attr("src") ===
-      "../../photosnap-multi-page-website/assets/shared/mobile/menu.svg"
+      "../assets/shared/mobile/menu.svg"
     ) {
       $navDropdown.show();
       $overlay.show();
       $menuButton.attr(
         "src",
-        "../../photosnap-multi-page-website/assets/shared/mobile/close.svg"
+        "../assets/shared/mobile/close.svg"
       );
       console.log("true");
     } else {
@@ -27,7 +27,7 @@ $(document).ready(() => {
       console.log("false");
       $menuButton.attr(
         "src",
-        "../../photosnap-multi-page-website/assets/shared/mobile/menu.svg"
+        "../assets/shared/mobile/menu.svg"
       );
     }
   });
