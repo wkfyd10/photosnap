@@ -12,13 +12,12 @@ $(document).ready(() => {
   $menuButton.on("click", () => {
     if (
       $menuButton.attr("src") ===
-      "../assets/shared/mobile/menu.svg"
-    ) {
+      "./assets/shared/mobile/menu.svg"){
       $navDropdown.show();
       $overlay.show();
       $menuButton.attr(
         "src",
-        "../assets/shared/mobile/close.svg"
+        "./assets/shared/mobile/close.svg"
       );
       console.log("true");
     } else {
@@ -27,10 +26,11 @@ $(document).ready(() => {
       console.log("false");
       $menuButton.attr(
         "src",
-        "../assets/shared/mobile/menu.svg"
+        "./assets/shared/mobile/menu.svg"
       );
     }
   });
+
 
   //PRCING PLAN BUTTON
   $(".switch input").on("click", function () {
